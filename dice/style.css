@@ -1,0 +1,78 @@
+.container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px;
+  padding: 50px;
+  gap: 6rem;
+}
+
+.item {
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 15%;
+  background-color: rgb(241, 241, 241);
+  display: grid;
+  grid-template-columns: 19px 19px 19px 19px 19px;
+  grid-template-rows: 19px 19px 19px 19px 19px;
+}
+
+.one {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.two {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.three {
+  grid-area: 3 / 3 / 4 / 4;
+}
+
+.four {
+  grid-area: 4 / 4 / 5 / 5;
+}
+
+.five {
+  grid-area: 5 / 5 / 6 / 6;
+}
+
+.six {
+  grid-area: 6 / 6 / 7 / 7;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: black;
+  border-color: black;
+  align-self: center;
+  justify-self: center;
+}
+
+.dot-1 {
+  grid-area: 3 / 3 / 4 / 4;
+}
+
+.dot-2 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.dot-3 {
+  grid-area: 4 / 4 / 5 / 5;
+}
+
+.dot-4 {
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+.dot-5 {
+  grid-area: 4 / 2 / 5 / 3;
+}
+
+.dot-6 {
+  grid-area: 3 / 3 / 4 / 4;
+}
+
+body {
+  background-color: rgba(255, 255, 0, 0.342);
+}
