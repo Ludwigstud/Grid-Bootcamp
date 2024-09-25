@@ -1,7 +1,7 @@
 .container {
   display: grid;
-  grid-template-columns: 100px 100px 100px 100px 100px 100px;
-  grid-template-rows: 100px 100px 100px 100px 100px 100px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   padding: 50px;
   gap: 6rem;
 }
@@ -13,6 +13,8 @@
   display: grid;
   grid-template-columns: 19px 19px 19px 19px 19px;
   grid-template-rows: 19px 19px 19px 19px 19px;
+  width: 100px;
+  height: 100px;
 }
 
 .one {
