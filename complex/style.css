@@ -25,22 +25,22 @@ nav {
 
 header {
   grid-area: header;
-  height: 250px;
+  height: 350px;
 }
 
 .article1 {
   grid-area: article1;
-  height: 150px;
+  height: 250px;
 }
 
 .article2 {
   grid-area: article2;
-  height: 150px;
+  height: 250px;
 }
 
 .article3 {
   grid-area: article3;
-  height: 150px;
+  height: 250px;
 }
 
 .article-a {
@@ -68,7 +68,7 @@ header {
 .article5,
 .article6,
 .article7 {
-  height: 100px;
+  height: 175px;
 }
 
 .img-container {
@@ -94,7 +94,7 @@ footer {
 .article-b,
 .article-c,
 .article-d {
-  height: 200px;
+  height: 250px;
 }
 
 footer {
