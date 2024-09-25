@@ -1,0 +1,171 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+
+  grid-template-areas:
+    "nav nav nav nav nav nav"
+    "header header header header header header"
+    "article1 article1 article1 article1 article-container article-container"
+    "article2 article2 article2 article2 article-container article-container"
+    "article3 article3 article3 article3 article-container article-container"
+    "article-a article-a article-a article-b article-b article-b"
+    "article-c article-c article-c article-d article-d article-d"
+    "img-container img-container img-container img-container img-container img-container "
+    "img-container img-container img-container img-container img-container img-container "
+    "img-container img-container img-container img-container img-container img-container "
+    "footer footer footer footer footer footer ";
+}
+
+nav {
+  grid-area: nav;
+  height: 50px;
+}
+
+header {
+  grid-area: header;
+  height: 250px;
+}
+
+.article1 {
+  grid-area: article1;
+  height: 150px;
+}
+
+.article2 {
+  grid-area: article2;
+  height: 150px;
+}
+
+.article3 {
+  grid-area: article3;
+  height: 150px;
+}
+
+.article-a {
+  grid-area: article-a;
+}
+
+.article-b {
+  grid-area: article-b;
+}
+
+.article-c {
+  grid-area: article-c;
+}
+
+.article-d {
+  grid-area: article-d;
+}
+
+.article-container {
+  display: grid;
+  grid-area: article-container;
+}
+
+.article4,
+.article5,
+.article6,
+.article7 {
+  height: 100px;
+}
+
+.img-container {
+  grid-area: img-container;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.img-container {
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  align-content: center;
+  justify-content: center;
+
+  place-items: center;
+}
+
+.article-a,
+.article-b,
+.article-c,
+.article-d {
+  height: 200px;
+}
+
+footer {
+  height: 150px;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+nav,
+header,
+.article1,
+.article2,
+.article3,
+.article4,
+.article5,
+.article6,
+.article7,
+.article-a,
+.article-b,
+.article-c,
+.article-d,
+.img,
+footer {
+  background-color: #bebebe;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-weight: 500;
+  font-family: sans-serif;
+  font-size: 20px;
+  color: grey;
+}
+
+@media (max-width: 500px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "nav nav"
+      "header header"
+      "article1 article1"
+      "article2 article2"
+      "article3 article3"
+      "article-container article-container"
+      "article-a article-b"
+      "article-c article-d"
+      "img-container img-container"
+      "footer footer";
+  }
+
+  .img-container {
+    grid-template-columns: repeat(2, 1fr);
+    width: auto;
+    height: auto;
+  }
+
+  .article-container {
+    gap: 10px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+body {
+  margin-left: 50px;
+  margin-right: 50px;
+}
